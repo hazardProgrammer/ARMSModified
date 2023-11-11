@@ -396,7 +396,7 @@ void init(std::initializer_list<int8_t> leftMotors,
           pros::motor_gearset_e_t gearset, double slew_step,
           double linear_exit_error, double angular_exit_error,
           double settle_thresh_linear, double settle_thresh_angular,
-          int settle_time, double min_linear_speed, double min_angular_speed) {
+          int settle_time, double min_linear_speed, double min_angular_speed, double min_turn_speed) {
 
 	// assign constants
 	chassis::slew_step = slew_step;
@@ -418,6 +418,7 @@ void init(std::initializer_list<int8_t> leftMotors,
 
 	chassis::min_linear_speed = min_linear_speed;
 	chassis::min_angular_speed = min_angular_speed;
+	chassis::min_turn_speed = min_turn_speed;
 }
 
 /**************************************************/
