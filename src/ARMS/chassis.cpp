@@ -26,6 +26,7 @@ int settle_time;
 double maxSpeed = 100;
 double min_linear_speed;
 double min_angular_speed;
+double min_turn_speed;
 double leftPrev = 0;
 double rightPrev = 0;
 double leftDriveSpeed = 0;
