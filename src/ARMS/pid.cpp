@@ -166,7 +166,7 @@ std::array<double, 2> angular() {
 	    pid(angularTarget, sv, &pe, &in_ang, angularKP, angularKI, angularKD);
 
 	if (fabs(speed) < chassis::min_angular_speed) {
-		speed = (std::signbit(speed) ? -1 : 1) * chassis::min_angular_speed;
+		speed = (std::signbit(speed) ? -1 : 1) * chassis::min_turn_speed;
 	}
 	return {-speed, speed}; // clockwise positive
 }
